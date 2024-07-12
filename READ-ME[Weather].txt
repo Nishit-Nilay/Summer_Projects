@@ -1,0 +1,86 @@
+# WeatherApp
+
+WeatherApp is a simple command-line application written in Java that fetches and displays the current weather information for a specified city using the Weather API. The application also displays ASCII art based on the weather conditions.
+
+## Features
+
+- Fetches current weather data for any city.
+- Displays temperature, humidity, and weather description.
+- Shows ASCII art corresponding to the weather condition.
+
+## Prerequisites
+
+- Java Development Kit (JDK) 8 or higher
+- Internet connection
+
+## Getting Started
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/Nishit-Nilay/Summer_Projects.git
+    cd Summer_Projects/Weather
+    ```
+
+2. **Compile the Java source file:**
+
+    ```bash
+    javac -cp .:path/to/okhttp.jar:path/to/json.jar com/example/WeatherApp.java
+    ```
+
+    Replace `path/to/okhttp.jar` and `path/to/json.jar` with the actual paths to the `okhttp` and `json` library JAR files.
+
+3. **Create an executable shell script (weather.sh):**
+
+    ```bash
+    echo '#!/bin/bash' > weather.sh
+    echo 'java -cp .:path/to/okhttp.jar:path/to/json.jar com.example.WeatherApp' >> weather.sh
+    chmod +x weather.sh
+    ```
+
+    Replace `path/to/okhttp.jar` and `path/to/json.jar` with the actual paths to the `okhttp` and `json` library JAR files.
+
+4. **Run the application:**
+
+    ```bash
+    ./weather.sh
+    ```
+
+    Enter the name of the city when prompted to get the current weather information.
+
+## Usage
+
+When you run the `weather.sh` script, the application will prompt you to enter a city name. Type the name of the city and press Enter. The application will fetch and display the weather information along with ASCII art based on the weather conditions. To exit the application, type `quit`.
+
+## Example
+
+Enter a city (or type 'quit' to exit): London
+Weather in London:
+Temperature: 15.0 °C
+Humidity: 80%
+Description: Partly cloudy
+   		      .--.     
+                  .-(    ).  
+                 (___.__)__)
+
+
+
+
+
+## Dependencies
+
+- [OkHttp](https://square.github.io/okhttp/) - An HTTP & HTTP/2 client for Java
+- [JSON](https://github.com/stleary/JSON-java) - A reference implementation of a JSON package in Java
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Weather API](https://www.weatherapi.com/) for providing the weather data
+- [ASCII Art Archive](https://emojicombos.com/) for the ASCII art inspiration
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at nishitnilay38@gmail.com.
